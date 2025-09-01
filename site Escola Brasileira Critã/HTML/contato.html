@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato | Escola Brasileira Cristã</title>
+  <link rel="stylesheet" href="../CSS/stleys/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav container" aria-label="Barra de navegação">
+    <a href="index.html" class="brand">
+    <img src="/imagem/logoEBC.png" alt="Logo Escola Brasileira Cristã" />
+      <div>
+        <h1>Escola Brasileira Cristã</h1>
+        <small>Centro Educacional</small>
+      </div>
+    </a>
+
+    <button class="burger" aria-label="Abrir menu" id="burger" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <ul class="nav-list">
+        <li class="has-sub">
+          <a href="#" class="menu-parent">Matrículas <span class="caret">▾</span></a>
+          <ul class="sub" aria-label="submenu Matrículas">
+            <li><a href="rematricula.html">Rematrícula</a></li>
+            <li><a href="novas_matriculas.html">Novos Alunos</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub proposta">
+          <a href="proposta_pedagogicas.html" class="menu-parent">Proposta Pedagógica <span class="caret">▾</span></a>
+          <ul class="sub megamenu" aria-label="segmentos">
+            <li><a href="proposta_pedagogicas.html#educacao-infantil">EDUCAÇÃO INFANTIL</a></li>
+            <li><a href="proposta_pedagogicas.html#fundamental-iniciais">ENSINO FUNDAMENTAL ANOS INICIAIS</a></li>
+            <li><a href="proposta_pedagogicas.html#fundamental-finais">ENSINO FUNDAMENTAL ANOS FINAIS</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+  <!-- HERO full-bleed -->
+  <section class="hero-slider hero-contact">
+    <div class="slider" id="bannerSliderContact">
+      <div class="slide active" data-link="">
+        <img src="../imagem/imagem banner.jfif" alt="Contato - Escola Brasileira Cristã">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h2>Fale conosco</h2>
+          <p>Agende visita, tire dúvidas sobre matrícula ou conheça nossa proposta pedagógica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="contact-grid fade-in">
+      <div class="contact-left">
+        <h2>Entre em contato</h2>
+        <p>Preencha o formulário ou use os canais abaixo. Responderemos em até 48h úteis.</p>
+
+        <div class="contact-cards">
+          <div class="card contact-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Endereço</h4>
+              <p>R. Pouso Alegre, 49 - Barcelona, Serra - ES, 29166-160</p>
+            </div>
+          </div>
+          <div class="card contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Telefone</h4>
+              <p><a href="tel:+550000000000">(00) 00000-0000</a> — WhatsApp</p>
+            </div>
+          </div>
+          <div class="card contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>E-mail</h4>
+              <p><a href="mailto:contato@escolabrasileiracrista.com.br">contato@escolabrasileiracrista.com.br</a></p>
+            </div>
+          </div>
+          <div class="card contact-card">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>Horário</h4>
+              <p>Seg–Sex: 07:30–18:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="mapWrap" class="map-wrap card">
+          <!-- mapa será lazy-loaded via JS -->
+          <div class="map-placeholder">Mapa carregará aqui ao rolar a página</div>
+        </div>
+      </div>
+
+      <aside class="contact-right">
+        <div class="card form-card">
+          <h3>Enviar mensagem</h3>
+          <form id="contactFormPage" enctype="multipart/form-data" novalidate>
+            <label>
+              <span>Nome completo</span>
+              <input name="nome" required placeholder="Nome completo">
+            </label>
+            <label>
+              <span>E-mail</span>
+              <input type="email" name="email" required placeholder="nome@exemplo.com">
+            </label>
+            <label>
+              <span>Telefone</span>
+              <input name="telefone" required placeholder="(00) 00000-0000">
+            </label>
+            <label>
+              <span>Assunto</span>
+              <input name="assunto" placeholder="Assunto (ex: Matrícula)">
+            </label>
+            <label>
+              <span>Mensagem</span>
+              <textarea name="mensagem" required rows="5" placeholder="Escreva sua mensagem"></textarea>
+            </label>
+            <label class="file-field">
+              <span>Anexar documento (opcional)</span>
+              <input type="file" name="anexo" accept=".pdf,.jpg,.png">
+              <small class="file-name" aria-live="polite"></small>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+              <button type="reset" class="btn btn-outline">Limpar</button>
+            </div>
+            <p id="contactPageMsg" class="form-msg"></p>
+          </form>
+        </div>
+
+        <div class="card">
+          <h4>Atendimento Rápido</h4>
+          <p>Prefere WhatsApp? Clique no botão flutuante no canto inferior direito.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- success modal -->
+  <div id="modalSuccess" class="modal" aria-hidden="true">
+    <div class="modal-content card">
+      <button class="modal-close" aria-label="Fechar">&times;</button>
+      <h3>Mensagem enviada</h3>
+      <p>Recebemos sua mensagem. Entraremos em contato em breve.</p>
+      <button class="btn btn-primary modal-ok">Ok</button>
+    </div>
+  </div>
+
+  <!-- floating WhatsApp -->
+  <a class="whatsapp-fab" href="https://wa.me/550000000000" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="footer-brand">
+        <div class="logo"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div><h3>Escola Brasileira Cristã</h3><small>Centro Educacional</small></div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="proposta_pedagogicas.html">Proposta Pedagógica</a>
+        <a href="novas_matriculas.html">Novas Matrículas</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="footer-info">
+        <p><i class="fa-solid fa-location-dot"></i> Rua Exemplo, 123 — Cidade</p>
+        <p><i class="fa-solid fa-envelope"></i> contato@escolabrasileiracrista.com.br</p>
+      </div>
+    </div>
+    <div class="footer-copy">&copy; 2025 Escola Brasileira Cristã. Todos os direitos reservados.</div>
+  </footer>
+
+  <script src="../JS/index.js"></script>
+</body>
+</html>

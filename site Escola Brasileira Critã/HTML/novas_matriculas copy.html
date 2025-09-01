@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novas Matrículas | Escola Brasileira Cristã</title>
+  <link rel="stylesheet" href="../CSS/stleys/index.css">
+  <link rel="stylesheet" href="../CSS/stleys/novas_matriculas.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+ 
+  <header>
+    <nav class="nav container" aria-label="Barra de navegação">
+      <a href="index.html" class="brand">
+       <img src="/imagem/logoEBC.png" alt="Logo Escola Brasileira Cristã" />
+        <div>
+          <h1>Escola Brasileira Cristã</h1>
+          <small>Centro Educacional</small>
+        </div>
+      </a>
+
+      <button class="burger" aria-label="Abrir menu" id="burger" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <ul class="nav-list">
+          <li class="has-sub">
+            <a href="#" class="menu-parent">Matrículas <span class="caret">▾</span></a>
+            <ul class="sub" aria-label="submenu Matrículas">
+              <li><a href="rematricula.html">Rematrícula</a></li>
+              <li><a href="novas_matriculas.html">Novos Alunos</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub proposta">
+            <a href="proposta_pedagogicas.html" class="menu-parent">Proposta Pedagógica <span class="caret">▾</span></a>
+            <ul class="sub megamenu" aria-label="segmentos">
+              <li><a href="proposta_pedagogicas.html#educacao-infantil">EDUCAÇÃO INFANTIL</a></li>
+              <li><a href="proposta_pedagogicas.html#fundamental-iniciais">ENSINO FUNDAMENTAL ANOS INICIAIS</a></li>
+              <li><a href="proposta_pedagogicas.html#fundamental-finais">ENSINO FUNDAMENTAL ANOS FINAIS</a></li>
+          </li>
+
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="matriculas" class="container fade-in">
+      <div class="enroll card card-pad">
+        <h2><i class="fa-solid fa-user-plus"></i> Matrículas Abertas</h2>
+        <p>Garanta a vaga do seu filho em um ambiente acolhedor e de alto desempenho.</p>
+        <div class="steps segments">
+          <div class="segment-card slide-up">
+            <span class="num"><i class="fa-solid fa-file-lines"></i></span>
+            <div><b>Formulário</b><br/><small>Preencha seus dados e a série de interesse.</small></div>
+          </div>
+          <div class="segment-card slide-up">
+            <span class="num"><i class="fa-solid fa-calendar-days"></i></span>
+            <div><b>Agendamento</b><br/><small>Visite o campus e conheça nossa proposta.</small></div>
+          </div>
+          <div class="segment-card slide-up">
+            <span class="num"><i class="fa-solid fa-folder-open"></i></span>
+            <div><b>Documentação</b><br/><small>Envie os documentos e confirme a matrícula.</small></div>
+          </div>
+        </div>
+        <form id="enrollForm" class="form-card">
+          <label>
+            <span>Responsável</span>
+            <input required name="nome" placeholder="Seu nome completo" />
+          </label>
+          <label>
+            <span>E-mail</span>
+            <input required type="email" name="email" placeholder="voce@email.com" />
+          </label>
+          <label>
+            <span>Telefone</span>
+            <input required name="telefone" placeholder="(00) 00000-0000" />
+          </label>
+          <label>
+            <span>Nome do Aluno</span>
+            <input required name="aluno" placeholder="Nome do aluno" />
+          </label>
+          <label>
+            <span>Série de Interesse</span>
+            <select required name="serie">
+              <option value="">Selecione</option>
+              <option>Fundamental I</option>
+              <option>Fundamental II</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-primary">Quero ser contatado</button>
+          <p id="formMsg" class="form-msg"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="footer-brand">
+        <div class="logo"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <h3>Escola Brasileira Cristã</h3>
+          <small>Centro Educacional</small>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="proposta_pedagogicas.html">Proposta Pedagógica</a>
+        <a href="novas_matriculas.html">Novas Matrículas</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <div class="footer-info">
+        <p><i class="fa-solid fa-location-dot"></i> R. Pouso Alegre, 49 - Barcelona, Serra - ES, 29166-160</p>
+        <p><i class="fa-solid fa-envelope"></i> contato@escolabrasileiracrista.com.br</p>
+        <p><i class="fa-solid fa-phone"></i> (00) 00000-0000</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 Escola Brasileira Cristã. Todos os direitos reservados.
+    </div>
+    <button id="toggleMode" class="toggle-mode" aria-label="Alternar modo claro/escuro">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </footer>
+  <script>
+    // Formulário matrícula
+    document.getElementById('enrollForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const msg = document.getElementById('formMsg');
+      msg.textContent = 'Solicitação enviada! Entraremos em contato.';
+      msg.style.color = 'var(--accent)';
+      setTimeout(() => msg.textContent = '', 4000);
+      this.reset();
+    });
+    // Máscara telefone
+    document.querySelectorAll('input[name="telefone"]').forEach(function(input){
+      input.addEventListener('input', function(e) {
+        let v = input.value.replace(/\D/g, '');
+        if (v.length > 10) {
+          v = v.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+        } else if (v.length > 5) {
+          v = v.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+        } else if (v.length > 2) {
+          v = v.replace(/^(\d{2})(\d{0,5}).*/, '($1) $2');
+        } else {
+          v = v.replace(/^(\d*)/, '$1');
+        }
+        input.value = v;
+      });
+    });
+  </script>
+</body>
+</html>
